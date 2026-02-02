@@ -44,8 +44,11 @@ agentreview/
 !examples/*.txt
 !data/ICLR2022/paper/**/*.pdf
 
-# Outputs folder - 참가자별 결과 파일 제외
-outputs/
+# Outputs folder - 참가자별 결과 파일 제외 (샘플 review.json 예외)
+outputs/*
+!outputs/3_agent_result/
+outputs/3_agent_result/*
+!outputs/3_agent_result/review.json
 
 # Human reviews - 참가자별 수집 리뷰 제외 (예시 파일 제외)
 input/human_reviews/*
