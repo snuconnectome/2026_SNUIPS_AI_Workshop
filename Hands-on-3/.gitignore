@@ -1,0 +1,62 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+dist/
+*.egg-info/
+.pytest_cache/
+
+# Virtual Environment
+.venv/
+venv/
+ENV/
+env/
+
+# Environment Variables (API keys 포함)
+.env
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*/.ipynb_checkpoints/*
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# VSCode
+.vscode/
+
+# Cloned repositories (워크샵 중 다운로드)
+AgentLaboratory/
+pasa/
+litllm/
+agentreview/
+
+# Workshop outputs
+*.pdf
+*.png
+*.jpg
+!examples/*.pdf
+!examples/*.txt
+!data/ICLR2022/paper/**/*.pdf
+
+# Outputs folder - 참가자별 결과 파일 제외
+outputs/
+
+# Human reviews - 참가자별 수집 리뷰 제외 (예시 파일 제외)
+input/human_reviews/*
+!input/human_reviews/example_review.pdf
+
+# Old/backup files
+_old/
+
+# Personal manuscripts (sample_* 제외)
+input/my_*.md
+input/my_*.pdf
+
+# Docs folder (발표 준비용)
+docs/

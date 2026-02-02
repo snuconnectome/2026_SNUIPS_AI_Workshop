@@ -1,0 +1,30 @@
+# AI Literature Review Agent Workshop Dependencies
+# SNU AI Psychology - February 2026
+
+# LLM APIs
+google-generativeai>=0.8.5
+openai>=1.0.0
+
+# Environment & Config
+python-dotenv>=1.1.1
+
+# Academic APIs & Data
+requests>=2.31.0
+semanticscholar>=0.8.0
+arxiv>=2.0.0
+
+# Data Processing
+pandas>=2.0.0
+
+# File Processing (PDF, Word)
+PyPDF2>=3.0.0
+python-docx>=1.0.0
+
+# Dataset Access (for PeerRead in Part 5)
+datasets>=2.14.0
+
+# LangGraph Agent (Notebook 3)
+langgraph>=0.2.0
+langchain-core>=0.3.0
+langchain-openai>=0.2.0
+langchain-google-genai>=2.0.0

@@ -1,0 +1,61 @@
+[project]
+name = "aiworkshop-feb2026"
+version = "0.1.0"
+description = "AI Literature Review Agent Workshop - SNU AI Psychology"
+requires-python = ">=3.10"
+dependencies = [
+    # Jupyter & Notebook
+    "jupyterlab>=4.0.0",
+    "notebook>=7.0.0",
+    "ipykernel>=6.0.0",
+    "ipywidgets>=8.0.0",
+
+    # Environment & Config
+    "python-dotenv>=1.1.1",
+
+    # LLM APIs
+    "google-generativeai>=0.8.5",
+    "openai>=1.0.0",
+
+    # Academic APIs & Data (Notebook 1, 2)
+    "requests>=2.31.0",
+    "arxiv>=2.0.0",
+    "paperscraper>=0.2.0",
+
+    # Data Processing
+    "pandas>=2.0.0",
+
+    # File Processing (PDF, Word) - Notebook 2.5, 3, 4
+    "PyPDF2>=3.0.0",
+    "python-docx>=1.0.0",
+    "pdfplumber>=0.10.0",
+    "pymupdf>=1.23.0",
+
+    # Embeddings & SPECTER2 (Notebook 2)
+    "torch>=2.0.0",
+    "transformers>=4.30.0",
+    "adapters>=0.2.0",
+
+    # AgentReview CLI dependencies
+    "rich>=13.0.0",
+    "colorama>=0.4.6",
+    "prompt_toolkit>=3.0.0",
+
+    # LangGraph Agent (Notebook 3, 4)
+    "langgraph>=0.2.0",
+    "langchain>=0.3.0",
+    "langchain-core>=0.3.0",
+    "langchain-openai>=0.2.0",
+    "langchain-google-genai>=2.0.0",
+    "tavily-python>=0.3.0",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+only-include = ["notebooks"]
+
+[tool.uv]
+dev-dependencies = []
