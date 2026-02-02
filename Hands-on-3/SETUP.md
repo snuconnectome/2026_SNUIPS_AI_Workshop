@@ -9,7 +9,7 @@
 ### 1. 필수 요구사항
 
 - Python 3.10 이상
-- VSCode 또는 Cursor (또는 다른 IDE)
+- **Cursor** (권장) 또는 VSCode
 - Git
 
 ### 2. 저장소 클론
@@ -96,12 +96,18 @@ OPENAI_API_KEY=your_openai_api_key_here  # 선택사항
 
 **⚠️ 중요:** `.env` 파일은 git에 업로드되지 않습니다 (.gitignore에 포함됨)
 
-### 6. VSCode에서 노트북 실행
+### 6. Cursor에서 노트북 실행
 
-1. VSCode에서 `aiworkshop_Feb2026` 폴더 열기
-2. `notebooks/1_overview.ipynb` 열기
-3. 우측 상단에서 Kernel 선택: `.venv` 또는 `Python 3.x.x (.venv)`
-4. Cell 실행: `Shift + Enter`
+```bash
+# 프로젝트 루트에서 Cursor 열기
+cursor .
+```
+
+1. Cursor에서 `Hands-on-3/notebooks/1_overview.ipynb` 열기
+2. 우측 상단 **"Select Kernel"** 클릭
+3. **"Python Environments"** 선택
+4. **`.venv (Python 3.x.x)`** 선택
+5. Cell 실행: `Shift + Enter`
 
 ### 7. 확인
 
@@ -161,18 +167,16 @@ uv pip install -e .
 # 또는: pip install -e .
 ```
 
-### Q2. VSCode에서 Kernel이 안 보여요
+### Q2. Cursor에서 Kernel이 안 보여요
 ```bash
 # venv 활성화 후
 source .venv/bin/activate  # macOS/Linux
-
-# ipykernel 설치 확인
-pip install ipykernel
+.venv\Scripts\activate     # Windows
 
 # Jupyter kernel 수동 등록
 python -m ipykernel install --user --name=aiworkshop --display-name="Python (.venv)"
 
-# VSCode 재시작 후 노트북에서 "Python (.venv)" 선택
+# Cursor 재시작 후 노트북에서 "Python (.venv)" 선택
 ```
 
 ### Q3. API Key가 로딩 안 돼요 (로컬)
@@ -196,7 +200,7 @@ python -m ipykernel install --user --name=aiworkshop --display-name="Python (.ve
   - [ ] 저장소 클론 완료
   - [ ] 가상환경 생성 및 패키지 설치
   - [ ] `.env` 파일에 API key 설정
-  - [ ] VSCode에서 노트북 실행 테스트
+  - [ ] Cursor에서 노트북 실행 테스트
 
 - [ ] **Colab 환경 (백업)**
   - [ ] Google 계정 확인
