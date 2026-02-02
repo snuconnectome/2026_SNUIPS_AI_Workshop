@@ -1,4 +1,5 @@
 # Session 1. An Introduction to RAG Through Chatbot Experiment Design with Streamlit
+## 발표자: 안선우
 
 **Build your own AI Co-Scientist Workshop - February 2026**
 
@@ -44,6 +45,18 @@ RAG_Workshop/
 
 ---
 
+## Streamlit App Deploy
+* Streamlit Guide.pdf 참고
+* requirements.txt 반드시 GitHub 레포지토리에 넣어두기
+* Streamlit cloud App Secrets 탭에 API Key 넣기
+```
+GOOGLE_API_KEY = "your-api-key"
+# 또는
+OPENAI_API_KEY = "your-api-key"
+```
+
+---
+
 ## W2 Streamlit 챗봇
 - 실행: https://w2-build-chatbot.streamlit.app/
 - Streamlit을 활용한 기본 챗봇
@@ -67,22 +80,7 @@ RAG_Workshop/
 ## W4 Advanced RAG 챗봇
 - 실행: https://w4-rag-chatbot-advanced.streamlit.app/
 - W3 RAG 챗봇에 Hybrid Search 기법을 추가한 챗봇
-
-
----
-
-## 설치 및 실행
-
-**Streamlit Cloud App Deploy 시**:
-- Streamlit Guide.pdf 참고
-1. requirements.txt 반드시 GitHub 레포지토리에 넣어두기
-2. Streamlit cloud App Secrets 탭에 API Key 넣기
-```
-GOOGLE_API_KEY = "your-api-key"
-# 또는
-OPENAI_API_KEY = "your-api-key"
-```
-
+- 
 ---
 * 링크를 걸어둔 Streamlit app은 2월 5일까지만 접속 가능합니다.
 
